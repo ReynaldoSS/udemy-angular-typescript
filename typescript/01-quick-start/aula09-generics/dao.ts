@@ -3,7 +3,8 @@ import { DaoInterface } from "./dao.interface";
 export class Dao<T> implements DaoInterface<T> {
     tableName: string = '';
     insert(object: T): boolean {
-        console.log('Inserindo...');
+        console.log(
+            'Inserindo...');
         return true;
     }
     update(object: T): boolean {
